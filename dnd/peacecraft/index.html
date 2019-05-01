@@ -7,11 +7,33 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../../utils/global_styles.css">
     <title>iTec Software</title>
+
+    <style>
+      #navbar {
+        height: 10%;
+      }
+      #main_cont {
+        height: 90%;
+        background-color: rgb(105, 114, 127);
+      }
+      body {
+        height: 100%;
+      }
+      html {
+        height: 100%;
+      }
+      .btn {
+        border-radius: 10px;
+        outline-style: none;
+        background-color: rgb(66, 66, 66);
+      }
+
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id='navbar'>
       <a class='navbar-brand' href='https://itecai.github.io/'>iTec</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,12 +57,12 @@
           </li>
 
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid" id='main_cont'>
       <h3>Welcome to the Peacecraft D&D page!</h3>
       <p>Links:</p>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <a type="button" class="btn btn-secondary" href="https://www.dndbeyond.com/campaigns/453478" target="_blank">Campaign</a>
-        <a type="button" class="btn btn-secondary" href="map.html">Map</a>
+      <div class="btn-group" role="group">
+        <a type="button" class="btn btn-dark" href="https://www.dndbeyond.com/campaigns/453478" target="_blank">Campaign</a>
+        <a type="button" class="btn btn-dark" href="map.html">Map</a>
       </div>
 
     </div>
